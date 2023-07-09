@@ -4,7 +4,7 @@ import StarRating from "./StarRating";
 const Filter = ({
   titleFilter,
   rateFilter,
-  handleTitleFiler,
+  handleTitleFilter,
   handleRateFilter,
 }) => {
   return (
@@ -13,7 +13,7 @@ const Filter = ({
         type="text"
         placeholder="Filter by title"
         value={titleFilter}
-        onChange={(e) => handleTitleFiler(e.target.value)}
+        onChange={(e) => handleTitleFilter(e.target.value)}
       />
       <StarRating rateFilter={rateFilter} handleRateFilter={handleRateFilter} />
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import StarRating from "./StarRating";
 import EditMovie from "./Edit";
+import { Link } from "react-router-dom";
 
 const MovieCard = ({ movie, handleDeleteMovie, handleEditMovie }) => {
   return (
@@ -15,6 +16,9 @@ const MovieCard = ({ movie, handleDeleteMovie, handleEditMovie }) => {
           Delete
         </button>
       </div>
+      <Link to={`/movies/${movie.id}`} className="btnV">
+        View Details
+      </Link>
     </div>
   );
 };
